@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link href="bootstrap.3.3.6-custom.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter var";
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+
+    <div class="flex bg-gray-100 min-h-screen">
+      <!-- sidebar component desktop -->
+      <div id="sidebar"></div>
+      <!-- / end sidebar component desktop -->
+
+      <div class="flex flex-col w-0 flex-1 overflow-hidden">
+        <!-- topbar component and mobile sidebar -->
+        <div id="topbar"></div>
+        <!-- / end topbar component and mobile sidebar -->
+
+        <main class="flex-1 relative overflow-y-auto focus:outline-none">
+          <div class="py-6">
+            <div class="mx-auto px-4 sm:px-6 lg:px-8">
+              <!-- easyme app -->
+              <div class="py-4">
+                <div
+                  class="p-4 h-screen border-4 border-dashed border-gray-200 rounded-lg h-96"
+                ></div>
+              </div>
+              <!-- / end easyme app -->
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
